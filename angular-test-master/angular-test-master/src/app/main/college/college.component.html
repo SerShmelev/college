@@ -1,0 +1,25 @@
+<div class="spinner">
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+</div>
+<main class="card" *ngIf="!isLoading">
+    <section class="content-menu" >
+        <img class="image-place" src="assets/img/college_001.jpg"/>
+        <h1>{{ college?.name }}</h1>
+
+        <mat-list class="list">
+            <mat-list-item class="item">
+                <a class="item-name" [routerLink]="'/about'"> {{ 'common.About' | translate}}</a>
+            </mat-list-item>
+            <mat-list-item class="item">
+                <a class="item-name" [routerLink]="'/courses'"> {{ 'common.Courses' | translate}}</a>
+            </mat-list-item>
+            <mat-list-item class="item">
+                <a class="item-name" [routerLink]="'/teachers'"> {{ 'common.Teachers' | translate}}</a>
+            </mat-list-item>
+            <mat-list-item class="item">
+                <a class="item-name" [routerLink]="'/contacts'"> {{ 'common.Contacts' | translate }}</a>
+            </mat-list-item>
+        </mat-list>
+        <div [innerHTML]="college.about" class="college-description"></div>
+    </section>
+</main>

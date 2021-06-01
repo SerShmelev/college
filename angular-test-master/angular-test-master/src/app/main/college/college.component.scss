@@ -1,0 +1,65 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  padding: 50px;
+  max-width: 750px;
+  box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #fff;
+}
+
+.image-place {
+  width: 750px;
+  height: 500px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 500;
+}
+
+.item {
+  border-radius: 12px;
+  background-color: #f0f0f3;
+  box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #fff;
+  height: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:active {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #d3d3d6, -2px -2px 5px #fff;
+
+  }
+
+  ::after {
+    border-bottom: #333333 1px solid;
+  }
+}
+
+.item-name {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  border-bottom: #333333 1px solid;
+}
+
+.college-description {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
